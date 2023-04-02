@@ -1,19 +1,21 @@
 let input = document.querySelector('input');
 let ul = document.querySelector('ul');
 
-input.onkeypress = function () {
+input.onkeypress = function (event) {
     if (event.keyCode == 13) {
-        let li = document.createElement('li');
-        let span = document.createElement('span');
-        let img = document.createElement('img');
+        // Проверяем, что значение поля input не пустое
+        if (input.value.trim() !== '') {
+            let li = document.createElement('li');
+            let span = document.createElement('span');
+            let img = document.createElement('img');
 
-
-        span.innerHTML = input.value;
-        img.setAttribute('src', './garbage.svg');
-        li.appendChild(img);
-        li.appendChild(span);
-        ul.appendChild(li);
-        input.value = '';
+            span.innerHTML = input.value;
+            img.setAttribute('src', 'garbage.svg');
+            li.appendChild(img);
+            li.appendChild(span);
+            ul.appendChild(li);
+            input.value = '';
+        }
     }
 }
 
