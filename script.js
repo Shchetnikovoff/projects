@@ -9,7 +9,7 @@ input.onkeypress = function () {
 
 
         span.innerHTML = input.value;
-        img.setAttribute('src', 'garbage.svg');
+        img.setAttribute('src', './garbage.svg');
         li.appendChild(img);
         li.appendChild(span);
         ul.appendChild(li);
