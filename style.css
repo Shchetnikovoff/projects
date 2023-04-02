@@ -12,6 +12,7 @@ body {
 
   margin: 0 auto;
   box-shadow: 0 0 8px black;
+  position: relative;
 }
 
 h1 {
@@ -79,7 +80,7 @@ input:focus {
   vertical-align: sub;
   margin-right: 10px;
 
-  transition: width 0.3s;
+  transition: width 1s;
   opacity: 0;
   margin-left: 5px;
 }
@@ -87,4 +88,29 @@ input:focus {
 .todos li:hover img {
   width: 24px;
   opacity: 1;
+}
+
+#buttons {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  background-color: #86a8e7;
+  border: 2px solid transparent;
+  color: white;
+  padding: 8px 20px;
+  margin: 0 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border-color: #86a8e7;
+  cursor: pointer;
 }
