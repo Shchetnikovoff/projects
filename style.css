@@ -60,7 +60,7 @@ input:focus {
   background: #f7f7f7;
   height: 50px;
 
-  cursor: pointer;
+  cursor: crosshair;;
   font-size: 20px;
   user-select: none;
 }
